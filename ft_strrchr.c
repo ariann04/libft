@@ -11,26 +11,26 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
+	int len;
 
-	i = 0;
-	while (s[i])
-		i++;
-	while (s[--i])
+    len = ft_strlen(s);
+	while (len >= 0)
 	{
-		if (s[i] == c)
-			return ((char *)s + i);
+		if (s[len] == (unsigned char)c)
+			return ((char *)s + len);
+        len--;
 	}
+    if ((char)c == 0)
+            return ((char *)s);
 	return (NULL);
 }
 
-int	main()
+/*int	main()
 {
 	printf ("%s\n", ft_strrchr("caracola", 'c'));
 	printf ("%s\n", strrchr("caracola", 'c'));
 	return (0);
-}
+}*/

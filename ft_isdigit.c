@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
 
-int	main()
+/*int	main()
 {
 	printf("%i", ft_isdigit('2'));
 	return (0);
-}
+}*/

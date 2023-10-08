@@ -13,15 +13,19 @@
 #include <stdio.h>
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*str;
+    const unsigned char *p = s;
+	const unsigned char uc = (unsigned char)c;
 
-	str = s;
-	if (*p == (unsigned char)c)
-		return (*p);
-	p++;
+    while (n--)
+    {
+            if (*p == uc)
+                    return ((void *)p);
+            p++;
+    }
+    return (0);
 }
 
-int	main()
+/*int	main()
 {
 	printf("%i", )
-}
+}*/

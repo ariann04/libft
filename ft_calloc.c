@@ -18,13 +18,13 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*str;
 
 	str = malloc(count * size);
-	if (str == '\0')
+	if (str == NULL)
 		return (NULL);
 	ft_bzero(str, count * size);
 	return (str);
 }
 
-int main()
+/*int main()
 {
     size_t num_elements = 5;
     size_t element_size = sizeof(int);
@@ -63,4 +63,4 @@ int main()
     free(ft_calloc_result);
 
     return 0;
-}
+}*/

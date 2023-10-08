@@ -17,11 +17,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (ft_memcmp(s1, s2, n));
 }
 
-int	main()
+/*int	main()
 {
 	const char	array1[] = "hola";
 	const char	array2[] = "holi";
 	printf("%i", ft_strncmp(array1, array2, 10));
 	return (0);
-}
-
+}*/

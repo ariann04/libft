@@ -17,14 +17,17 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 	size_t	srclen;
 
-	i = 0;
 	srclen = ft_strlen(src);
-	while ((i < dstsize - 1) && (i < srclen))
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
+    if (src != NULL && dst != NULL && dstsize != 0)
+    {
+            i = 0;
+            while ((i < dstsize - 1) && (i < srclen))
+            {
+                    dst[i] = src[i];
+                    i++;
+            }
+            dst[i] = '\0';
+    }
 	return (srclen);
 }
 
@@ -34,6 +37,6 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	char	array2[10] = "Adios";
 
 
-	printf("%zu", ft_strlcpy(array, array2, 6));
+	printf("%zu", ft_strlcpy(array, array2, 5));
 	return (0);
 }*/

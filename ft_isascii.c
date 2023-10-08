@@ -18,8 +18,8 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-int	main()
+/*int	main()
 {
 	printf("%i", ft_isascii(' '));
 	return (0);
-}
+}*/
