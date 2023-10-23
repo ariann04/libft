@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tblagoev <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ls <marvin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 18:40:39 by tblagoev          #+#    #+#             */
-/*   Updated: 2023/10/11 03:52:42 by ls               ###   ########.fr       */
+/*   Created: 2023/10/11 03:00:54 by ls                #+#    #+#             */
+/*   Updated: 2023/10/11 03:06:36 by ls               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_tolower(int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	while (*s)
+	{
+		write (fd, s, 1);
+		s++;
+	}
 }
-
-/*int	main()
-{
-	printf("%c", ft_tolower('z'));
-	return (0);
-}*/

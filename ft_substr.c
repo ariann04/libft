@@ -6,7 +6,7 @@
 /*   By: tblagoev <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 21:37:59 by tblagoev          #+#    #+#             */
-/*   Updated: 2023/09/25 23:56:54 by tblagoev         ###   ########.fr       */
+/*   Updated: 2023/10/11 03:52:17 by ls               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t i;
-	char	*substring = malloc((len + 1) * sizeof(char));
+	size_t	i;
+	char	*substring;
 
+	substring = malloc((len + 1) * sizeof(char));
 	i = 0;
 	if (substring == NULL)
 		return (NULL);

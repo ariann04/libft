@@ -6,7 +6,7 @@
 /*   By: tblagoev <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 19:55:19 by tblagoev          #+#    #+#             */
-/*   Updated: 2023/09/25 18:52:52 by tblagoev         ###   ########.fr       */
+/*   Updated: 2023/10/11 03:28:09 by ls               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int result;
-	int sign;
+	int	result;
+	int	sign;
 
 	result = 0;
 	sign = 1;
