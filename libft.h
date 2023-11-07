@@ -6,7 +6,7 @@
 /*   By: tblagoev <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 19:42:04 by tblagoev          #+#    #+#             */
-/*   Updated: 2023/10/17 01:46:28 by ls               ###   ########.fr       */
+/*   Updated: 2023/11/06 19:32:35 by ls               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int		ft_isprint(int c);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 int		ft_tolower(int c);
 int		ft_isascii(int c);
-void	*ft_memchar(const void *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_toupper(int c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -51,4 +51,5 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strjoin(const char *s1, const char *s2);
 void	ft_putnbr_fd(int n, int fd);
+char	**ft_split(const char *s, char c);
 #endif

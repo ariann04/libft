@@ -33,6 +33,7 @@ SOURCES = \
 	ft_putendl_fd.c \
 	ft_strjoin.c \
 	ft_putnbr_fd.c \
+	ft_split.c \
 
 OBJECTS = $(SOURCES:.c=.o)
 
